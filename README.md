@@ -9,7 +9,7 @@ Verificar si se trata de un Wordpress: ./wp_users --check
     	<<< @hecky from Neobits.org >>>
 
 
-wp_users esta programado en #Bash y NO pretende ser una herramienta final, ni de identificacion de plataforma ( para ello recomiendo whatweb ) ni para enumeracion de usuarios ( recomiendo plecost y flunym0us ).
+wp_users esta programado en #Bash y NO pretende ser una herramienta final, ni de identificacion de plataforma ( para ello recomiendo whatweb ) ni para enumeracion de usuarios ( recomiendo usar ademas de wp_users; w3af y wpbf para resultados mas satisfactorios ).
 
 wp_users solo pretende mostrar como podemos hacer nuestras propias herramientas FACILMENTE con #Bash sin depender de terceros.
 
