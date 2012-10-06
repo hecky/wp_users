@@ -20,7 +20,7 @@ Al final se decidio compartir a la comunidad, para incentivar la programacion en
 wp_users esta en Version 0.1 por lo que puede contener muchas fallas y no dar los resultados esperados. No se pretende hacer una herramienta Final de footprinting. Pero en todo caso, cualquier usuario es libre de usar, distribuir, modificar, contribuir y mejorar wp_users siempre y cuando no se haga con animo de lucro y respetando al autor.
 
 
-Autor:  	hecky
-Correo:		hecky@neobits.org
-Web:		http://neobits.org
-twitter:	http://twitter.com/hecky
+Autor:  	hecky   
+Correo:		hecky@neobits.org   
+Web:		http://neobits.org   
+twitter:	http://twitter.com/hecky    
