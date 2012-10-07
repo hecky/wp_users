@@ -10,7 +10,7 @@ argumentos=$#
 url=$1
 tries=$2
 limpia=$(echo $tries | egrep -q [a-zA-Z]; echo $? | tail -1 )
-not_url=$(echo $1 | egrep -q [a-zA-Z]"\."[a-zA-Z]"{2,5}"$; echo $? | tail -1)
+not_url=$(echo $1 | egrep -q [a-zA-Z]"\."[a-zA-Z]"{2,5}"; echo $? | tail -1)
 
 function validar_argumentos(){
 if [ $argumentos -eq 1 ] && [ $url == "--help" ]; then
@@ -32,7 +32,7 @@ if [ $argumentos -eq 1 ] && [ $url == "--help" ]; then
 elif [ $argumentos -eq 1 ] && [ $url == "--check" ]; then
 	echo -e "<< Ingresa la url de la pagina para verificar si es un wordpress >>\n"
 	read pagina
-	url_real=$(echo $pagina | egrep -q [a-zA-Z]"\."[a-zA-Z]"{2,5}"$; echo $? | tail -1)
+	url_real=$(echo $pagina | egrep -q [a-zA-Z]"\."[a-zA-Z]"{2,5}"; echo $? | tail -1)
 	if	[ $url_real -eq 1 ]; then
 		echo -e "No parece una URL valida"
 		exit
