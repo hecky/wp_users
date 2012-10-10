@@ -1,5 +1,5 @@
 #!/bin/bash
-#./wp_users V 0.1
+#./wp_users V 1.0
 #Author: 	hecky
 #Web: 		Neobits.org
 #Twitter: 	@hecky
@@ -127,7 +127,7 @@ for ((i=1;i<=$tries;i++)); do
 	if (GET -H "User-Agent: $user_agent" "$1/?author=$i" -s | head -1 | grep -q 200); then
 		users=$(GET -H "User-Agent: $user_agent" "$1/?author=$i" | egrep "author-".+ -o | cut -d" " -f1 | cut -d"-" -f2- | sed 's/">//g' | head -1)
 		empty_users+=$users
-		let $((k++))		
+		let $((k++))
 		echo -en "Existe usuario con ID = \e[1;33m"$i"\e[m ( \e[1;31m"$users"\e[m )\n"
 		if [ -z "$empty_users" -a $k -eq 5 ]; then
 echo -e "\e[3;4m<< Si fue posible identificar ID's pero los nombres de usuario aparecen vacios, intenta en la forma interactiva con\e[m \e[1;33;41m./wp_users --inurl\e[m >>\n"
